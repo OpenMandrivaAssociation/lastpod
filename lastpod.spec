@@ -1,7 +1,7 @@
 %define name lastpod
 %define version 0
 %define svn r80
-%define release %mkrel 0.%svn.1
+%define release %mkrel 0.%svn.2
 
 Summary: Submits the songs played on an iPod to last.fm
 Name: %{name}
@@ -35,7 +35,7 @@ install -D dist/lastPod.jar %buildroot%_datadir/%name/lastPod.jar
 install -d %buildroot{%_bindir,%_datadir/applications}
 cat > %buildroot%_bindir/%name << EOF
 #!/bin/sh
-java -jar lastPod.jar
+java -jar %_datadir/%name/lastPod.jar
 EOF
 cat > %buildroot%_datadir/applications/mandriva-%name.desktop << EOF
 [Desktop Entry]
