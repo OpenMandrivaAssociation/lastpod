@@ -1,7 +1,7 @@
 %define name lastpod
 %define version 0.91
 %define svn r93
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Submits the songs played on an iPod to last.fm
 Name: %{name}
@@ -47,6 +47,7 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=AudioVideo;Audio;Java;
+MimeType=x-content/audio-player;
 EOF
 
 
@@ -56,6 +57,12 @@ EOF
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%update_desktop_database
+
+%postun
+%clean_desktop_database
 
 %files
 %defattr(-,root,root)
