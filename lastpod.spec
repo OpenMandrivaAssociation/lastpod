@@ -1,7 +1,7 @@
 %define name lastpod
-%define version 0.91
-%define svn r93
-%define release %mkrel 2
+%define version 1.0
+%define svn r96
+%define release %mkrel 1
 
 Summary: Submits the songs played on an iPod to last.fm
 Name: %{name}
