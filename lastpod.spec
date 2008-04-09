@@ -1,6 +1,6 @@
 %define name lastpod
 %define version 1.0
-%define svn r96
+%define svn r97
 %define release %mkrel 1
 
 Summary: Submits the songs played on an iPod to last.fm
@@ -52,8 +52,8 @@ EOF
 
 
 %check
-#cd bin
-#ant test
+cd bin
+ant test
 
 %clean
 rm -rf $RPM_BUILD_ROOT
