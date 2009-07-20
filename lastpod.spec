@@ -14,7 +14,7 @@ Group: Sound
 Url: http://www.lastpod.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
-BuildRequires: java-devel
+BuildRequires: java-devel >= 1.6.0
 BuildRequires: ant-junit
 Requires: java
 
