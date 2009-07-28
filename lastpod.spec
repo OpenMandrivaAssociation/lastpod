@@ -1,14 +1,13 @@
 %define name lastpod
 %define version 1.1.0
-%define svn r104
-%define release %mkrel 2
+%define svn r103
+%define release %mkrel 3
 
 Summary: Submits the songs played on an iPod to last.fm
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{name}-%{svn}.tar.bz2
-Patch: lastpod-r104-fix-test.patch
 License: GPLv2+
 Group: Sound
 Url: http://www.lastpod.org
@@ -26,7 +25,6 @@ last.fm web site.
 
 %prep
 %setup -q -n %name
-%patch
 
 %build
 cd bin
