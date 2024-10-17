@@ -10,7 +10,7 @@ Release: %{release}
 Source0: %{name}-%{svn}.tar.bz2
 License: GPLv2+
 Group: Sound
-Url: http://www.lastpod.org
+Url: https://www.lastpod.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 BuildConflicts: java-1.5.0-gcj-devel 
